@@ -1,0 +1,18 @@
+What is the time complexity of the following code :
+
+        int a = 0, i = N;
+        while (i > 0) {
+            a += i;
+            i /= 2;
+        }
+        
+Select your answer from the following options:
+O(N)
+O(Sqrt(N))
+O(N / 2)
+O(log N) <-- ANSWER
+O(log(log N))
+
+EXPLANATION --> 
+
+n -> n/2 -> n/4 -> n/8 -> _ _ _ _ -> 0 (makes a tree of height log(n) )
