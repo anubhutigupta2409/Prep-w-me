@@ -1,0 +1,32 @@
+In the following C++ function, let n >= m.
+
+    int gcd(int n, int m) {
+            if (n%m ==0) return m;
+            if (n < m) swap(n, m);
+            while (m > 0) {
+                n = n%m;
+                swap(n, m);
+            }
+            return n;
+    }
+What is the time complexity of the above function assuming n > m?
+
+Select your answer from the following options:
+&Theta;(logn) <-- ANSWER
+&Omega;(n)
+&Theta;(loglogn)
+&Theta;(sqrt(n))
+
+EXPLANATION -->
+
+n > m
+
+n	m
+14	4
+2
+4	2
+
+0	
+2	0 <-- m is reducing to half in every call therefore, logn and since it's the av case when n>m sp T = Theta(logn)
+^
+ans

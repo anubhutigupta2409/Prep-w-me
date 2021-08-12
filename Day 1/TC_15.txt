@@ -1,0 +1,23 @@
+What is time complexity of following code :
+
+        int count = 0;
+        for (int i = N; i > 0; i /= 2) {
+            for (int j = 0; j < i; j++) {
+                count += 1;
+            }
+        }
+        
+Select your answer from the following options:
+O(N * N)
+O(N * log N)
+O(N * log(log(N)))
+O(N) <-- ANSWER
+O(N * Sqrt(N))
+
+EXPLANATION -->
+
+complexities getting added in such form -->
+
+n + n/2 + n/4 + 
+
+we take the heighest and leave the constants , O(n)
