@@ -1,14 +1,6 @@
 /*
 Pick from both sides!
-Very Easy
 
-94
-
-30
-
-Add to favorites
-Asked In:
-MEDIA.NET
 Problem Description
 
 Given an integer array A of size N.
